@@ -43,10 +43,10 @@ def restore(dst_ip, src_ip):
     packet = scapy.ARP(op = 2, pdst = dst_ip, hwdst = dst_mac, psrc = src_ip, hwsrc = source_mac) # op = 2 para que sea un paquete arp response, indicandole a la maquina victima que la direccion spoof_ip(ip del atacante) es el router.
     scapy.send(packet, count = 4, verbose = False)
 
+
 options = get_arguments()
 target_ip = options.target_ip
 gateway_ip = options.gateway_ip
-
 
 sent_packet_count = 0   # contador de paquetes
 
